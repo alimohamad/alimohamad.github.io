@@ -53,7 +53,7 @@ let usacsDetails = [
     "In the Fall, I coordinated several \"speed dating\" sessions in order to help underclassmen find a mentor in our 200+ student-large undergraduate mentorship program, with the help of our Education Director.",
     "USACS's Tech Director and I work together to organize Hack Nights every two weeks so that novice students can learn new skills by contributing to social good projects USACS sources from third-party organizations.",
     "USACS's Outreach Director and I collaborate throughout the year to organize several events with companies looking to recruit, in addition to installments of our CS Speaker Series.",
-    "I help our Community Director run fun social events for Rutgers CS students!",
+    "I help our <a href = \"https://goldencarrots72.github.io/\"><b>Community Director</b></a> run fun social events for Rutgers CS students!",
     "I worked with the President of the Rutgers Cognitive Science Club to establish a research pipeline for students interested in REUs, by pairing professors in the CogSci department with undergrads with specific skillsets.",
     "I created a sponsorship document for companies interested in becoming more involved with USACS to buy events packages, which also include sponsorship in HackRU.",
     "I help coordinate new articles for the USACS blog!"

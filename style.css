@@ -27,9 +27,12 @@ h1, h2, h3, h4, h5, p, a, li{
     width: 75%;
 }
 
-.toggle{
+a{
     color: black;
     text-decoration: underline;
+}
+
+.toggle{
     padding: 2.25%;
 }
 
