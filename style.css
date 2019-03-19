@@ -1,0 +1,41 @@
+html{
+    background-color: #E3C39D;
+    text-align: center;
+    color: black;
+}
+
+
+h1, h2, h3, h4, h5, p, a, li{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.profile-img{
+    height: 40%;
+    border: 5px dashed black;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+.bio{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.divider{
+    border-color: #344146;
+    width: 75%;
+}
+
+.toggle{
+    color: black;
+    text-decoration: underline;
+    padding: 2.25%;
+}
+
+.container-detail{
+    width: 50%;
+    margin-left: 23%;
+    list-style-position: inside;
+    margin-bottom: 3%;
+}
