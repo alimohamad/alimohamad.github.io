@@ -19,12 +19,17 @@ h1, h2, h3, h4, h5, p, a, li{
 
 .bio{
     width: 50%;
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .divider{
     border-color: #344146;
     width: 75%;
+}
+
+ul{
+    padding: 0;
 }
 
 a{
@@ -34,11 +39,10 @@ a{
 
 .toggle{
     padding: 2.25%;
+    font-weight: bolder;
 }
 
 .container-detail{
-    width: 50%;
-    margin-left: 23%;
     list-style-position: inside;
     margin-bottom: 3%;
 }

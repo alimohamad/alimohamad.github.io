@@ -23,7 +23,7 @@ function buildList(list){
     
         let h3 = document.createElement("h3");
         let li = document.createElement("li");
-        li.setAttribute("class", "container-detail");
+        li.setAttribute("class", "container-detail bio");
         li.innerHTML = list[i];
         h3.appendChild(li);
         ul.appendChild(h3);
@@ -59,7 +59,7 @@ let usacsDetails = [
     "I help coordinate new articles for the USACS blog!"
 ];
 
-const usacs = new Involvement("usacs", "In 2018, I became Events Coordinator for the Rutgers Undergraduate Student Alliance of Computer Science. I did more than just coordinate events though!", usacsDetails);
+const usacs = new Involvement("usacs", "In 2018, I became events coordinator for the rutgers undergraduate student alliance of computer scientists. i did more than just coordinate events though!", usacsDetails);
 
 document.getElementById("usacs").addEventListener("click", function(){
      setDiv(usacs);
@@ -74,7 +74,7 @@ let hackathonDetails = [
     "In January 2019, I became a Coach for Major League Hacking. Now I travel the country to empower student hackers and organizers at their events, host Localhost workshops, and write for the MLH Content Launchpad. Say hi at my next event!"
 ];
 
-const hackathons = new Involvement("hackathons", "Since my sophomore year of high school, I've been to about 30 hackathons as a hacker, volunteer, mentor or organizer. Here are some of my more meaningful achievements.", hackathonDetails);
+const hackathons = new Involvement("hackathons", "since my sophomore year of high school, i've been to about 30 hackathons as a hacker, volunteer, mentor or organizer.", hackathonDetails);
 
 document.getElementById("hackathons").addEventListener("click", function(){
      setDiv(hackathons);
