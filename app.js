@@ -70,7 +70,7 @@ document.getElementById("usacs").addEventListener("click", function(){
 
 let hackathonDetails = [
     "In September 2016, I organized a data science hackathon for high school students in NYC in collaboration with NASA's Office of Innovation called Space Apps Next Generation: NYC.",
-    "In November 2018, I've been an organizer for HackRU, Rutgers's premiere 24-hour hackathon. Since then, I've served on the Volunteer and Hacker Experience (VHX) team, the Logistics Team, and the Marketing and Design (MnD) team.",
+    "In November 2018, I became an organizer for HackRU, Rutgers's premiere 24-hour hackathon. Since then, I've served on the Volunteer and Hacker Experience (VHX) team, the Logistics Team, and the Marketing and Design (MnD) team.",
     "In January 2019, I became a Coach for Major League Hacking. Now I travel the country to empower student hackers and organizers at their events, host Localhost workshops, and write for the MLH Content Launchpad. Say hi at my next event!"
 ];
 
