@@ -27,26 +27,23 @@ function buildList(list){
         h3.appendChild(li);
         ul.appendChild(h3);
       
-    }
-    
-    console.log(ul);
-  
+    }  
 }
 
 function buildSite(){
-    const internships = new Involvement("internships", "here's where i've worked!", Life.work);
+    const internships = new Involvement("work", "here's where i've worked! I'm currently working at Micrsoft on developer tools.", Life.work);
 
-    document.getElementById("internships").addEventListener("click", function(){
+    document.getElementById("work").addEventListener("click", function(){
         setDiv(internships);
     })
 
-    const leadership = new Involvement("leadership", "in 2018, i became events coordinator for the rutgers undergraduate student alliance of computer scientists. at the end of 2019, i was elected president! since then, i've been focusing a lot of my time on impact labs.", Life.leadership);
+    const leadership = new Involvement("community", "from 2018-2020, i served as events coordinator and then president of the rutgers undergraduate student alliance of computer scientists! since then, i've been focusing a lot of my time on impact labs.", Life.leadership);
 
-    document.getElementById("leadership").addEventListener("click", function(){
+    document.getElementById("community").addEventListener("click", function(){
         setDiv(leadership);
     })
 
-    const hackathons = new Involvement("hackathons", "since my sophomore year of high school, i've been to about 30 hackathons as a hacker, volunteer, mentor or organizer.", Life.hackathons);
+    const hackathons = new Involvement("hackathons", "since my sophomore year of high school, i've been to about 50 hackathons as a coach, hacker, volunteer, mentor or organizer.", Life.hackathons);
 
     document.getElementById("hackathons").addEventListener("click", function(){
         setDiv(hackathons);
@@ -67,17 +64,18 @@ function buildSite(){
 
 const Life = {
     work: [
+        `In summer 2021, I interned at Numina, where I worked on automating sensor rebooting with Python and Terraform, and tracking and reporting uptime for their <a href = "https://numina.co">visionary traffic sensors</a> with React and AWS DynamoDB.`, 
         "In summer 2020, I interned at Microsoft, on the DevProd team working on a VSCode Extension to view Azure DevOps (version control) tickets in your editor to reduce context switches.",
         "In the summer of 2019, I interned for Pearson again, working on their DevOps team, then with another intern on a proof of concept. At the beginning of the summer I worked with AWS Systems Manager and Python to write various scripts to check and correct the environment tags on  their EC2 instances bringing them to 99% compliance to standard. Later in the summer, the other intern and I used Express.js, React Native, and Google Cloud Platform to create an image recognition app that returns relevant supplemental learning resources when you take a photo of a textbook page.",
         "In the summer of 2018, I was an intern for Learning Services Technology Department at Pearson, working on their Realize Backbone Services team. I built an internal developer tool with Java, Spring, Python, Docker, and Jenkins that streamlined the workflow for creating a new microservice - before, developers needed to interact with 30 classes to start a project. After, they only needed to interact with 4." 
     ],
     leadership: [
+        `In summer 2021, I was a hackNY fellow!`,
         `
-        In 2021, I joined the board for Ethitech, a tech ethics oriented club at Rutgers. More on that soon!
+        In 2021, I joined the board for Ethitech, a tech ethics oriented club at Rutgers.
         `,
         `
         In 2020 I joined the Impact Labs team! Since then, I've worked on:
-        <br/><br/>- Rebooting the Impact Blog as the Impact Publication, a community journal for op-eds and data-driven writing on imagining a world where writing code is divorced from captialism.
         <br/><br/>- Co-coordinating the Code For Equity Fellowship, a remote, four month program for young technologists to meaningfully research and build solutions for manifestations for our systems of inequity.
         <br/><br/>- Imagining a new leadership structure that best fits the organizations culture, mission, vision, and values.
         `,
@@ -101,6 +99,7 @@ const Life = {
         "In September 2016, I organized a data science hackathon for high school students in NYC in collaboration with NASA's Office of     Innovation called Space Apps Next Generation: NYC."
     ],
     sideProjects: [
+        "In spring 2021, I participated in Project School where my team and I worked on CP9, a virtual filesystem built on the 9P network protocol, with the intent to further develop it as a peer to peer framework for applications.",
         "In fall 2020, a couple friends and I started working on <a href = \"https://github.com/tbltp\">tabletop</a>, a web-based character sheet builder for Dungeons and Dragons 5th Edition. It was a lot of fun, a lot of work, and has been super helpful for me to use to run campaigns during quarantine.",
         "In spring 2020, I hacked together a small little npm package for a React component that lets users \"sign in with Rutgers\" - Rutger's Open Systems Solutions maintains a Central Authentication System that's not available for students to play with, but <i>is</i> used by Google OAuth when people try to sign into their GSuite account. By restricting the subdomain by which people can log in to a service with to scarletmail.rutgers.edu and exporting that as an npm package, I essentially made a button (and associated web service to return some user info!) that redirects you to the Rutgers CAS login.",
         "In January 2020, I worked on a small proof of concept for a decentralized, encrypted database as a system - using PyRPC, I built a distributed key-value store with the hope to develop it and ship it out to social workers who need to make sure that their data cannot be compromised (people who work with the houseless, undocumented, etc.) After demoing it at the Impact Fellowship Showcase, it got a lot of really nice feedback.",
@@ -110,7 +109,7 @@ const Life = {
         "In summer 2018, I created an interpreter for <a href = \"https://alimohamad.github.io/Screenplaytex/\" target=\"_blank\">a LaTeX-like markup language that I built to generate screenplays.</a> Using basic DOM event listeners, I watched for changes in a textbox, separated the string value of the textbox line by line and pushed each line to a stack, then popped and rendered a given line of markup (if it was character dialogue, a \“slugline\” to identify setting, etc.) inside an iframe.",
         "In summer 2018, I wrote a Python script to simplify my workflow while programming. It runs os.system() commands executing git add, commit, and push functions, while using the emoji library to print out an emoji hitting the whip, since the commit message was always \"wip\", which is short for work-in-progress. I built this on a bus ride from Boston to New Jersey in order to get better at Python which I was using at work.",
         "In 2017, I won <a href=\"https://youtu.be/5IFfr-ggy-8?t=23m11s\" target=\"_blank\">3rd Place Overall at PennApps XV!</a> My team and I built a desktop accessibility tool for Parkinson's disease patients called TactEYEle - we used OpenCV to track the movement of the user's head and move the cursor accordingly, and correspond winks and blinks to clicks. Using IBM Watson's Speech-to-Text API for voice recognition, voice commands such as \"select\", \"copy / paste\", and so on correspond to the keyboard shortcuts being carried out, whereas \"transcribe\" followed by a phrase types that phrase out.",
-        "In summer 2017, I was the sole backend developer for a leaderboard for the GaryVee Flip Challenge, an internet challenge Gary Vaynerchuck posed to his YouTube audience to go out and flip items they got at garage sales in order to make $20,170 in 2017. I built the whole thing in Meteor.js."
+        "In summer 2017, I was the sole backend developer for a leaderboard for the GaryVee Flip Challenge, an internet challenge Gary Vaynerchuck posed to his YouTube audience to go out and flip items they got at garage sales in order to make $20,170 in 2017. I built the whole thing in Meteor.js. (I have since come to realize Gary Vaynerchuk is a clown.)"
     ],
     creativeProjects: [
         "Over the years, I've taken a lot of photos! I hope to take more, and get better at taking them.",
